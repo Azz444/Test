@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Apply different styles to the form elements on focus */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8940;
+}
+
+/* Optional: Apply different styles to the form elements on focus */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+/* Optional: Style form elements when they are invalid (requires HTML5 validation) */
+input:invalid,
+textarea:invalid {
+  border-color: #f00;
+  background-color: #fee;
+  color: #f00;
+}
+
+input:invalid::placeholder,
+textarea:invalid::placeholder {
+  color: #f00;
+}
+
+
+
+</style>
+<body>
+    <h1>Contact Form</h1>
+    <form id="contactForm" action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
